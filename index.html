@@ -1,81 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aman Chandak - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Aman Chandak</title>
+    <meta name="description"
+        content="Homepage of Aman Chandak, Robotics M.S. graduate from Arizona State University. Research interests: mobile manipulation, GNSS-denied UAV navigation, reinforcement learning, and vision-language-action models.">
+    <meta name="keywords"
+        content="Aman Chandak, Robotics, AI, RISE Lab, NICE Lab, ASU, Honeywell, 5G Localization, Mobile Manipulation, VLA, Reinforcement Learning, Multi-Robot Systems">
+    <link rel="stylesheet" href="style.css?v=12.0">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Hi, I'm Aman Chandak</h1>
-        <p>An aspiring robotics engineer passionate about general artificial intelligence.</p>
-    </header>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <a href="#about" class="logo-text">Aman Chandak</a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Robotics Master's student at Arizona State University (GPA: 4.0) with 3.5 years of professional experience in aerial robotics. My journey spans from building defense-grade autonomous drones in India to exploring cutting-edge AI-driven manipulation systems in research labs. I'm passionate about bridging the gap between theoretical robotics and real-world applications—making intelligent robots accessible, intuitive, and impactful.</p>
-    </section>
+        <!-- Main Content -->
+        <main>
+            <!-- About Section -->
+            <section id="about" class="page-section" style="padding-top: 1rem;">
+                <div class="home-layout">
+                    <div class="intro-text">
+                        <p style="margin-bottom: 1.25rem;">
+                            I am a Robotics and Autonomous Systems Master's graduate from <a href="https://www.asu.edu/"
+                                target="_blank">Arizona State University</a> (GPA: 4.0/4.0). At ASU I worked as a
+                            Graduate Student Research Aide at the <a href="https://home.riselab.info/"
+                                target="_blank">RISE Lab</a>, where my Honeywell-funded thesis built an end-to-end
+                            learning + state-estimation stack for 5G-based UAV localization in GNSS-denied environments.
+                            My research sits at the intersection of robotics, machine learning, and optimal control
+                            &mdash; with a focus on building systems that actually run on real hardware.
+                        </p>
+                        <p style="margin-bottom: 1.25rem;">
+                            Before ASU, I spent 3.5 years as a senior UAV engineer at Aerial IQ,
+                            where I led defense-grade UAV R&amp;D and shipped India's first commercial automated
+                            tethered drone station &mdash; from prototype to production.
+                        </p>
+                        <p>
+                            I am actively looking for full-time roles in robotics, autonomy, and physical AI starting
+                            summer 2026. <a href="assets/Aman_Chandak_Resume.pdf" target="_blank">Resume</a> &middot;
+                            <a href="https://github.com/Aman-Chandak" target="_blank">GitHub</a> &middot;
+                            <a href="https://www.linkedin.com/in/aman-chandak-9094b5131/" target="_blank">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="project-item">
-            <h3>Student Research Aide</h3>
-            <p><strong>RISE Lab, Arizona State University</strong> | Feb 2025 - Present<br>
-            Pioneering UAV navigation in GPS-denied environments by fusing 5G network signals with vision-based systems. Developing advanced sensor fusion algorithms (EKF, UKF) that combine 5G Position Reference Signals with IMU, barometer, and visual-inertial odometry—pushing the boundaries of autonomous flight in complex urban and indoor spaces.</p>
-        </div>
-        <div class="project-item">
-            <h3>Sr. UAV Engineer</h3>
-            <p><strong>Aerial IQ India Pvt Ltd</strong> | Jan 2021 - June 2024<br>
-            Led defense projects delivering GNSS-denied autonomous drone solutions using inertial navigation and radar velocity sensing. Launched India's first commercial tethered drone product for Police Department—managing full lifecycle from concept to deployment. Engineered flight control systems for high-altitude surveillance platforms, translating cutting-edge research into operational defense applications.</p>
-        </div>
-    </section>
+            <!-- Research & Projects Section -->
+            <section id="research" class="page-section"
+                style="margin-top: 5rem; border-top: 1px solid var(--light-border); padding-top: 4rem;">
+                <h2 class="section-title">Research &amp; Projects</h2>
 
-    <section id="projects">
-        <h2>Research & Projects</h2>
-        <div class="project-item">
-            <h3>AI-Powered Mobile Manipulation with Stretch Robot</h3>
-            <p><strong>NICE Lab, ASU</strong> | 2024 - Present<br>
-            Teaching robots to move like humans. Combining reinforcement learning with physics-based dynamics to achieve fluid manipulation. Integrated LLMs and Vision-Language Models so the Stretch robot understands natural language commands and translates them into real-world actions—bridging the gap between human intent and robotic execution through ROS 2 architecture.</p>
-            <p><em>Technologies: ROS 2, Reinforcement Learning, LLMs, VLMs, Python, Multi-modal Perception</em></p>
-            <a href="https://github.com/Aman-Chandak/Stretch-Mujoco" target="_blank" class="project-link">🔗 View on GitHub</a>
-        </div>
-        <div class="project-item">
-            <h3>Autonomous Tether Station for Extended Flight</h3>
-            <p><strong>Aerial IQ, India</strong> | 2021 - 2024<br>
-            Built an intelligent tether system that enables drones to fly indefinitely. Designed PID controllers for real-time tension management and automated deployment logic—allowing UAVs to stay airborne for surveillance missions without battery constraints. A blend of embedded systems and control theory solving real operational challenges.</p>
-            <p><em>Technologies: Python, ArduPilot, MAVLink, Raspberry Pi, PID Control, Embedded Systems</em></p>
-        </div>
-        <div class="project-item">
-            <h3>Non-prehensile Manipulation: Pushing Objects with Precision</h3>
-            <p><strong>EEE587 Course Project, ASU</strong> | 2024<br>
-            Explored how robots can manipulate objects without grasping them—like sliding a book across a table with perfect accuracy. Built MuJoCo simulations comparing LQR, MPC, and mixed-integer optimization for trajectory control. A deep dive into the mathematical elegance of control theory applied to everyday manipulation tasks.</p>
-            <p><em>Technologies: MuJoCo, Python, LQR, Model Predictive Control (MPC), Optimization</em></p>
-        </div>
-        </section>
+                <div class="project-list">
+                    <!-- Project 1: 5G Localization (Thesis) -->
+                    <div class="project-item">
+                        <div class="project-header">
+                            <div class="project-title-row">
+                                <h3><a href="https://www.proquest.com/docview/3335497868" target="_blank">5G-Based UAV
+                                        Localization &amp; Navigation in GNSS-Denied Environments</a></h3>
+                                <span class="project-tag">M.S. Thesis &middot; Industry-Sponsored</span>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-location">RISE Lab, ASU &middot; sponsored by Honeywell
+                                Technologies</span>
+                            <span class="project-date">| 2025 &ndash; 2026</span>
+                        </div>
+                        <div class="project-body">
+                            <img src="assets/uav_5g_localization.png" alt="5G UAV Navigation" class="project-thumbnail">
+                            <div class="project-desc">
+                                Investigates 5G New Radio
+                                Positioning Reference Signals (PRS) as a complement to GNSS for UAV navigation. Built a
+                                software-defined-radio hardware testbed using synchronized Ettus USRPs and
+                                OpenAirInterface to demonstrate meter-level OTDOA positioning indoors. Developed a
+                                neural multipath timing-bias corrector &mdash; a residual MLP with quantile and Gated
+                                Mixture-of-Gaussians heads &mdash; trained on a 2.15M-link MATLAB ray-tracing dataset.
+                                Integrating the learned bias/variance corrections into a weighted Gauss-Newton solver
+                                reduced horizontal RMSE from 11.83&nbsp;m to 2.08&nbsp;m, closing most of the gap to the
+                                bandwidth-limited oracle.
+                                <div class="project-tech-list">
+                                    <strong>Stack:</strong> PyTorch, MATLAB, Python, C++, ROS&nbsp;2, OpenAirInterface,
+                                    USRP, Gauss-Newton solvers, EKF, Qualcomm RB5 (ONNX/Int8).
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://www.proquest.com/docview/3335497868" target="_blank">Thesis
+                                        (ProQuest)</a>
+                                    <a href="https://doi.org/10.2514/6.2026-0501" target="_blank">AIAA SciTech 2026
+                                        paper</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out!</p>
-        <p>Email: <a href="mailto:achan160@asu.edu">achan160@asu.edu</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/aman-chandak-9094b5131/" target="_blank">https://www.linkedin.com/in/aman-chandak-9094b5131/</a></p>
-        <p>GitHub: <a href="https://github.com/Aman-Chandak" target="_blank">Aman Chandak</a></p>
-    </section>
+                    <!-- Project 2: Stretch Mobile Manipulation -->
+                    <div class="project-item">
+                        <div class="project-header">
+                            <div class="project-title-row">
+                                <h3><a href="https://github.com/Aman-Chandak/Stretch-Mujoco" target="_blank">Mobile
+                                        Manipulation with Vision-Language-Action Models on Stretch&nbsp;2</a></h3>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-location">NICE Lab, Arizona State University</span>
+                            <span class="project-date">| 2024 &ndash; Present</span>
+                        </div>
+                        <div class="project-body">
+                            <img src="assets/stretch_demo.gif" alt="Stretch Mobile Manipulation demo"
+                                class="project-thumbnail">
+                            <div class="project-desc">
+                                Built a teleoperation and absolute-joint-target command protocol for the Hello Robot
+                                Stretch&nbsp;2 platform to collect high-quality pick-and-place demonstrations, formatted
+                                to the Hugging Face <em>LeRobot</em> dataset standard. Currently fine-tuning the SmolVLA
+                                Vision-Language-Action model to parse natural-language instructions into multi-step
+                                manipulation trajectories, with iteration in MuJoCo prior to deployment on the physical
+                                robot through the full ROS&nbsp;2 autonomy stack.
+                                <div class="project-tech-list">
+                                    <strong>Stack:</strong> ROS&nbsp;2, Python, PyTorch, MuJoCo, LeRobot, SmolVLA,
+                                    OpenCV, Hello Robot Stretch&nbsp;2.
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/Aman-Chandak/Stretch-Mujoco" target="_blank">GitHub</a>
+                                    <a href="https://drive.google.com/drive/folders/12r-VNB68Mr3vvjMcQF8DxVz4v7E89wmK?usp=sharing"
+                                        target="_blank">Video Demonstrations</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <footer>
-        <p>&copy; <span id="current-year"></span> Aman Chandak. All rights reserved.</p>
-    </footer>
+                    <!-- Project 3: Heterogeneous MRTA -->
+                    <div class="project-item">
+                        <div class="project-header">
+                            <div class="project-title-row">
+                                <h3><a href="assets/MRS_Final_Project.pdf" target="_blank">Heterogeneous Multi-Robot Task
+                                        Allocation with Deadlock-Free Coalitions</a></h3>
+                                <span class="project-tag">Re-implementation &amp; Analysis &middot; Dai et&nbsp;al.,
+                                    RA-L 2025</span>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-location">MAE 598 Multi-Robot Systems &middot; Arizona State
+                                University</span>
+                            <span class="project-date">| Fall 2025</span>
+                        </div>
+                        <div class="project-body">
+                            <img src="assets/mrs_gazebo.png"
+                                alt="Gazebo simulation of heterogeneous multi-robot task allocation"
+                                class="project-thumbnail">
+                            <div class="project-desc">
+                                Re-implemented and theoretically extended the species-traits Heterogeneous MRTA
+                                framework of Dai et&nbsp;al. (IEEE RA-L 2025) for post-disaster search-and-rescue.
+                                Trained the decentralized REINFORCE policy under a Constrained Flashforward Mechanism
+                                (CFM) reward shaping that prevents deadlocks during coalition formation. Added a
+                                continuous Artificial Potential Field navigation layer and produced formal
+                                Lyapunov-style proofs of deadlock avoidance and finite-time mission completion.
+                                Validated end-to-end in a custom ROS&nbsp;2 (Jazzy) + Gazebo simulation with 11
+                                heterogeneous TurtleBots and mixed-height obstacle terrain.
+                                <div class="project-tech-list">
+                                    <strong>Stack:</strong> ROS&nbsp;2 Jazzy, Gazebo, Python, PyTorch, REINFORCE,
+                                    Artificial Potential Fields, Lyapunov analysis.
+                                </div>
+                                <div class="project-links">
+                                    <a href="assets/MRS_Final_Project.pdf" target="_blank">Report (PDF)</a>
+                                    <a href="https://github.com/sohamkarandikar391/multi_robot_task_allocation_env"
+                                        target="_blank">GitHub</a>
+                                    <a href="https://www.youtube.com/watch?v=Crc_LIuiWpk" target="_blank">Demonstration
+                                        Video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: MaxEnt RL via EBFlow -->
+                    <div class="project-item">
+                        <div class="project-header">
+                            <div class="project-title-row">
+                                <h3><a href="assets/Team9_Chandak_FinalProjectCombined.pdf" target="_blank">Maximum Entropy
+                                        Reinforcement Learning via Energy-Based Normalizing Flow</a></h3>
+                                <span class="project-tag">Re-implementation &amp; Reproducibility Study &middot; Chao
+                                    et&nbsp;al., 2024</span>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-location">CSE 574 / EEE 598 Reinforcement Learning &middot; Arizona
+                                State University</span>
+                            <span class="project-date">| Fall 2025</span>
+                        </div>
+                        <div class="project-body">
+                            <img src="assets/meow_multigoal.png"
+                                alt="Multi-goal navigation visualization from MEow re-implementation"
+                                class="project-thumbnail">
+                            <div class="project-desc">
+                                Reproduced and analyzed the <em>MEow</em> framework (Chao et&nbsp;al., 2024), which
+                                unifies policy evaluation and improvement in MaxEnt RL through Energy-Based Normalizing
+                                Flows &mdash; eliminating the Monte&nbsp;Carlo approximations required by SAC/SQL.
+                                Benchmarked MEow against SAC, SQL, DDPG, TD3, and PPO on five MuJoCo locomotion tasks
+                                (Hopper, HalfCheetah, Walker2d, Ant, Humanoid). Ran multi-seed reproducibility
+                                experiments
+                                and an ablation on Learnable Reward Shifting and Shifting-based Clipped Double
+                                Q-learning.
+                                <div class="project-tech-list">
+                                    <strong>Stack:</strong> PyTorch, MuJoCo, Stable-Baselines3.
+                                </div>
+                                <div class="project-links">
+                                    <a href="assets/Team9_Chandak_FinalProjectCombined.pdf" target="_blank">Report (PDF)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Non-Prehensile Manipulation -->
+                    <div class="project-item">
+                        <div class="project-header">
+                            <div class="project-title-row">
+                                <h3><a href="assets/Second_Contact_Point.pdf" target="_blank">Non-Prehensile Trajectory
+                                        Optimization for Rigid-Body Manipulation</a></h3>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-location">EEE 587 Optimal Control of Dynamic Systems &middot; Arizona
+                                State University</span>
+                            <span class="project-date">| Spring 2025</span>
+                        </div>
+                        <div class="project-body">
+                            <img src="assets/robotic_manipulation_physics.png" alt="Non-Prehensile Manipulation"
+                                class="project-thumbnail">
+                            <div class="project-desc">
+                                Modeled sliding, pushing, and tumbling interactions between a manipulator and rigid
+                                objects without grasping, formulating a mixed-integer optimization for contact-force
+                                scheduling in MuJoCo. Benchmarked Linear Quadratic Regulator (LQR), Model Predictive
+                                Control (MPC), and the mixed-integer planner on this hybrid dynamical system to compare
+                                tracking accuracy, robustness, and compute cost.
+                                <div class="project-tech-list">
+                                    <strong>Stack:</strong> MuJoCo, Python, NumPy, LQR, MPC, mixed-integer
+                                    programming.
+                                </div>
+                                <div class="project-links">
+                                    <a href="assets/Second_Contact_Point.pdf" target="_blank">Report (PDF)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Tethered Drone -->
+                    <div class="project-item">
+                        <div class="project-header">
+                            <div class="project-title-row">
+                                <h3>Automated Tethered Drone Station &mdash; India's First Commercial Deployment</h3>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-location">Aerial IQ, India</span>
+                            <span class="project-date">| 2021 &ndash; 2024</span>
+                        </div>
+                        <div class="project-body">
+                            <img src="assets/tethered_drone_station.png" alt="Tethered Drone Station"
+                                class="project-thumbnail">
+                            <div class="project-desc">
+                                Designed, built, and commercially deployed an active winch station that dynamically
+                                feeds and retrieves a power-and-data cable to a hovering UAV, enabling continuous
+                                surveillance flight times. Authored real-time PID cable-tension controllers that
+                                decouple winch dynamics from flight dynamics, and fused flight state with ground-side
+                                actions over a custom MAVLink interface on Raspberry Pi. The system was the first
+                                commercially shipped tethered drone product in India.
+                                <div class="project-tech-list">
+                                    <strong>Stack:</strong> ArduPilot, MAVLink, PID control, Python, Raspberry Pi.
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://www.youtube.com/watch?v=3qc1fkJwABk" target="_blank">Demonstration
+                                        Video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 id="publications" class="subsection-title"
+                    style="font-size: 1.15rem; margin-top: 4.5rem; margin-bottom: 1.5rem; font-weight: 600;">
+                    Publications</h3>
+                <div class="pub-list">
+                    <div class="pub-item">
+                        <span class="pub-authors">A. Chandak, et al.</span>
+                        <span class="pub-title">&ldquo;5G-Based Localization for Unmanned Aerial Vehicles.&rdquo;</span>
+                        <span class="pub-venue">AIAA SciTech Forum 2026.</span>&nbsp;<a
+                            href="https://doi.org/10.2514/6.2026-0501" target="_blank"
+                            style="font-size: 0.85rem;">[AIAA]</a>
+                    </div>
+                    <div class="pub-item">
+                        <span class="pub-authors">A. Chandak.</span>
+                        <span class="pub-title">&ldquo;5G-Based UAV Localization &amp; Navigation in GNSS-Denied
+                            Environments.&rdquo;</span>
+                        <span class="pub-venue">M.S. Thesis, Arizona State University, 2026.</span> &nbsp;<a
+                            href="https://www.proquest.com/docview/3335497868" target="_blank"
+                            style="font-size: 0.85rem;">[ProQuest]</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="page-section"
+                style="margin-top: 5rem; border-top: 1px solid var(--light-border); padding-top: 4rem;">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="exp-list">
+                    <div class="exp-item">
+                        <h3 class="exp-title">Graduate Student Research Aide</h3>
+                        <div class="exp-org">RISE Lab, Arizona State University &mdash; sponsored research with
+                            Honeywell Technologies</div>
+                        <div class="exp-date">Feb 2025 &ndash; May 2026</div>
+                        <div class="exp-desc">
+                            <p>
+                                Led the design and implementation of an end-to-end 5G-based localization stack for UAVs
+                                operating in GNSS-denied environments &mdash; the technical core of my Master's thesis,
+                                sponsored by Honeywell Technologies as the industry partner.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="exp-item">
+                        <h3 class="exp-title">Senior UAV Engineer</h3>
+                        <div class="exp-org">Aerial IQ India Pvt. Ltd.</div>
+                        <div class="exp-date">Jan 2021 &ndash; Jun 2024 &middot; Gurugram, India</div>
+                        <div class="exp-desc">
+                            <p>
+                                Spent three and a half years building safety-critical autonomy for production UAVs as a
+                                senior member of the flight controls and systems team. I led the design, firmware, field
+                                validation, and commercial launch of India's first automated tethered drone station
+                                &mdash; a winch-controlled platform enabling near-infinite surveillance flight times
+                                &mdash; owning everything from real-time PID cable-tension controllers in Python/MAVLink
+                                on Raspberry Pi to the hardware-software integration that keeps winch dynamics decoupled
+                                from onboard flight dynamics. In parallel, I developed perception-assisted navigation
+                                for high-altitude defense-grade UAVs, fusing inertial sensors with radar-based velocity
+                                sensing (HRVS) for robust flight in visually degraded conditions, and ran the
+                                field-testing and dataset-curation cycles that hardened the entire stack against sensor
+                                noise, actuation latency, and edge-case failure modes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="page-section"
+                style="margin-top: 5rem; border-top: 1px solid var(--light-border); padding-top: 4rem;">
+                <h2 class="section-title">Education</h2>
+                <div class="exp-list">
+                    <div class="exp-item">
+                        <h3 class="exp-title">M.S. Robotics and Autonomous Systems &mdash; GPA 4.0/4.0</h3>
+                        <div class="exp-org">Arizona State University, Tempe, AZ</div>
+                        <div class="exp-date">Aug 2024 &ndash; May 2026</div>
+                        <div class="exp-desc">
+                            Coursework: Linear Algebra, Modern Control Systems, Modeling and Control of Robots,
+                            Mathematical Foundations of Machine Learning, Reinforcement Learning, Optimal Control,
+                            Multi-Robot Systems.
+                        </div>
+                    </div>
+                    <div class="exp-item">
+                        <h3 class="exp-title">B.Tech Aerospace Engineering (Avionics)</h3>
+                        <div class="exp-org">University of Petroleum and Energy Studies, Dehradun, India</div>
+                        <div class="exp-date">Aug 2016 &ndash; May 2020</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards Section -->
+            <section id="awards" class="page-section"
+                style="margin-top: 5rem; border-top: 1px solid var(--light-border); padding-top: 4rem;">
+                <h2 class="section-title">Awards &amp; Honors</h2>
+                <div class="exp-list">
+                    <div class="exp-item">
+                        <h3 class="exp-title">Vertical Flight Society (VFS) Scholarship &mdash; 2026</h3>
+                        <div class="exp-org">Vertical Flight Society, Arizona Chapter</div>
+                        <div class="exp-desc">
+                            Awarded by the Arizona chapter of the Vertical Flight Society for academic excellence and
+                            contributions to vertical-flight and unmanned aerial systems research.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="page-section"
+                style="margin-top: 5rem; border-top: 1px solid var(--light-border); padding-top: 4rem;">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-layout">
+                    <div class="skills-col">
+                        <h4>AI &amp; Machine Learning</h4>
+                        <ul>
+                            <li>Vision-Language-Action (VLA) models</li>
+                            <li>Deep imitation learning</li>
+                            <li>Reinforcement learning (SAC, REINFORCE, MaxEnt)</li>
+                            <li>Transformers &amp; attention architectures</li>
+                            <li>3D computer vision</li>
+                            <li>Probabilistic filtering (EKF / UKF)</li>
+                        </ul>
+                    </div>
+                    <div class="skills-col">
+                        <h4>Motion Planning &amp; Control</h4>
+                        <ul>
+                            <li>Trajectory optimization</li>
+                            <li>LQR &amp; Model Predictive Control</li>
+                            <li>Sliding-mode control</li>
+                            <li>Sensor fusion &amp; SLAM</li>
+                            <li>Sim-to-real transfer</li>
+                            <li>Rigid-body dynamics</li>
+                        </ul>
+                    </div>
+                    <div class="skills-col">
+                        <h4>Tooling &amp; Hardware</h4>
+                        <ul>
+                            <li>Python, C++, MATLAB</li>
+                            <li>PyTorch, ONNX, CUDA</li>
+                            <li>ROS&nbsp;2, MuJoCo, Gazebo, Isaac Gym</li>
+                            <li>ArduPilot / MAVLink</li>
+                            <li>Ettus USRP, OpenAirInterface</li>
+                            <li>Qualcomm RB5 edge AI deployment</li>
+                            <li>Hello Robot Stretch&nbsp;2</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="page-section"
+                style="margin-top: 5rem; border-top: 1px solid var(--light-border); padding-top: 4rem; padding-bottom: 2rem;">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-info">
+                    <div class="contact-row">
+                        <div class="contact-details">
+                            <strong>Email:</strong> <a href="mailto:achan160@asu.edu">achan160@asu.edu</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-row">
+                        <div class="contact-details">
+                            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aman-chandak-9094b5131/"
+                                target="_blank">linkedin.com/in/aman-chandak</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-row">
+                        <div class="contact-details">
+                            <strong>GitHub:</strong> <a href="https://github.com/Aman-Chandak"
+                                target="_blank">github.com/Aman-Chandak</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <!-- <footer>
+            <p>(c) <span id="current-year"></span> Aman Chandak. All rights reserved.</p>
+        </footer> -->
+    </div>
 
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Highlight navigation links on scroll
+        const sections = document.querySelectorAll('.page-section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let currentSection = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= (sectionTop - 120)) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
     </script>
 </body>
-</html>     
+
+</html>
